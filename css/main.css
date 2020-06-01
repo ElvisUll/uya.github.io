@@ -39,9 +39,9 @@ nav {
     background: #36b5b0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 400px) {
    
     .sidenav li a {
-       font-size: 50px;
+       font-size: 20px;
    } 
 }
