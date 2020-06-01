@@ -41,6 +41,6 @@ nav {
 
 @media (max-width: 6000px) {
     .sidenav li a {
-       font-size: 30px;
+       font-size: 10px;
    } 
 }
