@@ -53,7 +53,54 @@
 .btn {
     display: flex;
     justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    background: grey;
+}
+
+
+.detalle-container {
+    background: #36b5b0;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+.detalle-titulo {
+    text-align: center;
+    color: white;
+}
+
+.detalle-contenido {
+    background: #298f8b;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    display: block;
+}
+
+.detalle {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.detalle-estado {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.detalle-btn {
+    padding: 10px;
+}
+
+.detalle-btn a {
+    border-radius: 10px;
 }
