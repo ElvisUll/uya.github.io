@@ -38,3 +38,10 @@ nav {
     margin-bottom: 0px;
     background: #36b5b0;
 }
+
+@media (max-width: 700px) {
+   
+    .sidenav li a {
+       font-size: 20px;
+   } 
+}
