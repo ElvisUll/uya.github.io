@@ -92,3 +92,13 @@
     padding-left: 35%;
     padding-right: 35%;
 }
+
+.detalle-btn {
+    padding: 10px;
+}
+
+.detalle-btn a {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
