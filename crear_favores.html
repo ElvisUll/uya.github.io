@@ -30,15 +30,15 @@
         </div>
         <div class="nav-wrapper">
             <div class="col s12">
-              <a href="./elegir_rol.html" class="breadcrumb"><i class="fas fa-home"></i></a>
-              <a href="#" class="breadcrumb">Crear favor</a>
+              <a href="./elegir_rol.html" class="breadcrumb" aria-label="volver a la pagina de escoger rol"><i class="fas fa-home"></i></a>
+              <a href="#" class="breadcrumb" aria-label="estas en la pagina para crear un favor">Crear favor</a>
             </div>
           </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a class="modal-trigger" href="#inicio">Iniciar sesión</a></li>
-        <li><a class="modal-trigger" href="#registro">Registrarse</a></li>
-        <li><a href="#">Información</a></li>
+    <ul class="sidenav" id="mobile-demo" aria-hidden="true" tabindex="-1">
+        <li><a class="modal-trigger" href="#inicio" tabindex="-1">Iniciar sesión</a></li>
+        <li><a class="modal-trigger" href="#registro" tabindex="-1">Registrarse</a></li>
+        <li><a href="#" tabindex="-1">Información</a></li>
     </ul>
     <!--    fin navegacion-->
 </header>
@@ -47,76 +47,76 @@
     <div class="contenedor container">
         <div class="fondo container">
             <div class="lista-titulo">
-                <h4>Lista de favores</h4>
+                <h4 tabindex="1">Lista de favores</h4>
             </div>
-            <div class="lista-favores">
+            <div class="lista-favores" role="radiogroup">
                 <table>
                     <tr>
                         <td>
-                            <label><input type="radio" name="interes" value="Tutorias Universitarias" />
+                            <label><input role="radio" type="radio" name="interes" value="Tutorias Universitarias" />
                                 <span class="white-text">Tutorías universitarias (500HC)</span></label>
                         </td>
                         <td>
-                            <label><input type="radio" name="interes" value="Transporte">
+                            <label><input role="radio" type="radio" name="interes" value="Transporte">
                                 <span class="white-text">Transporte (100 HC)</span></label>
                         </td>
                         <td>
-                            <label><input type="radio" name="interes" value="Tareas del hogar">
+                            <label><input role="radio" type="radio" name="interes" value="Tareas del hogar">
                                 <span class="white-text">Tareas del hogar (300 HC)</span></label>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label><input type="radio" name="interes" value="Actividades de trabajo">
+                            <label><input role="radio" type="radio" name="interes" value="Actividades de trabajo">
                                 <span class="white-text">Actividades de trabajo (500 HC)</span></label>
                         </td>
                         <td>
-                            <label><input type="radio" name="interes" value="Cuidado de niños">
+                            <label><input role="radio" type="radio" name="interes" value="Cuidado de niños">
                                 <span class="white-text">Cuidado de niños (400 HC)</span></label>
                         </td>
                         <td>
-                            <label><input type="radio" name="interes" value="Cuidado de personas mayores">
+                            <label><input role="radio" type="radio" name="interes" value="Cuidado de personas mayores">
                                 <span class="white-text">Cuidado de personas mayores (400 HC)</span></label>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label><input type="radio" name="interes" value="Compras">
+                            <label><input role="radio" type="radio" name="interes" value="Compras">
                                 <span class="white-text">Compras (200 HC)</span></label>
                         </td>
                         <td>
-                            <label><input type="radio" name="interes" value="Planificar eventos">
+                            <label><input role="radio" type="radio" name="interes" value="Planificar eventos">
                                 <span class="white-text">Planificar eventos (300 HC)</span></label>
                         </td>
                         <td>
-                            <label><input type="radio" name="interes" value="Ejercicios físicos">
+                            <label><input role="radio" type="radio" name="interes" value="Ejercicios físicos">
                                 <span class="white-text">Ejercicios físicos (200 HC)</span></label>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label><input type="radio" name="interes" value="Tutorías escolares">
+                            <label><input role="radio" type="radio" name="interes" value="Tutorías escolares">
                                 <span class="white-text">Tutorías escolares (200 HC)</span></label>
                         </td>
                         <td>
-                            <label><input type="radio" name="interes" value="Cocina">
+                            <label><input role="radio" type="radio" name="interes" value="Cocina">
                                 <span class="white-text">Cocina (300 HC)</span></label>
                         </td>
                         <td>
-                            <label><input type="radio" name="interes" value="Limpieza">
+                            <label><input role="radio" type="radio" name="interes" value="Limpieza">
                                 <span class="white-text">Limpieza (100 HC)</span></label>
                         </td>
                     </tr>
                 </table>
                 <div class="info-adicional">
-                <p>Tiempo promedio en horas</p>
-                <input type="number" max="5" min="1" value="1" class="white-text validate">
+                <p tabindex="14">Tiempo promedio en horas</p>
+                <input aria-label="Introduzca un numero entre 1 y 5" type="number" max="5" min="1" value="1" class="white-text validate">
                 <p>
                     Información adicional de tus necesidades:<br>
-                    <textarea name="adicional"></textarea>
+                    <textarea aria-label="Introduzca la descripcion mas detallada del favor que necesita" name="adicional"></textarea>
                 </p>
                 </div>
-                <a onclick="location.href='haciendo_favor.html'" class="btn">Solicitar</a>
+                <button onclick="location.href='haciendo_favor.html'" class="btn">Solicitar</button>
             </div>
         </div>
     </div>
