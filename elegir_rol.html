@@ -30,14 +30,14 @@
         </div>
         <div class="nav-wrapper">
             <div class="col s12">
-              <a href="./elegir_rol.html" class="breadcrumb"><i class="fas fa-home"></i></a>
+              <a href="./elegir_rol.html" class="breadcrumb" aria-label="Pagina de escoger rol"><i class="fas fa-home"></i></a>
             </div>
           </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a class="modal-trigger" href="#inicio">Iniciar sesión</a></li>
-        <li><a class="modal-trigger" href="#registro">Registrarse</a></li>
-        <li><a href="#">Información</a></li>
+    <ul class="sidenav" id="mobile-demo" tabindex="-1">
+        <li><a class="modal-trigger" href="#inicio" tabindex="-1">Iniciar sesión</a></li>
+        <li><a class="modal-trigger" href="#registro" tabindex="-1">Registrarse</a></li>
+        <li><a href="#" tabindex="-1">Información</a></li>
     </ul>
     <!--    fin navegacion-->
 </header>
@@ -48,36 +48,36 @@
             <div class="col s12 m12 l6">
                 <div class="fondo col s12 m12 l12">
                     <div class="titulo">
-                        <h4>Hacer Favores</h4>
+                        <h4 tabindex="1">Hacer Favores</h4>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <p>
+                            <p tabindex="2">
                                 Aqui podras escoger algun favor de un usuario que necesita una mano,
                                 seras recompensado con helper coin.
                             </p>
                         </div>
                     </div>
                     <div class="card-btn">
-                        <a onclick="location.href='lista_favores.html'" class="btn">Entrar</a>
+                        <button tabindex="3" role="button" onclick="location.href='lista_favores.html'" class="btn">Entrar</button>
                     </div>
                 </div>
             </div>
             <div class="col s12 m12 l6">
                 <div class="fondo col s12 m12 l12">
                     <div class="titulo">
-                        <h4>Necesito un favor</h4>
+                        <h4 tabindex="4">Necesito un favor</h4>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <p>
+                            <p tabindex="5">
                                 Si necesitas ayuda en alguna actividad, debes crear un favor en esta
                                 opcion para recibir ayuda de otros usuarios.
                             </p>
                         </div>
                     </div>
                     <div class="card-btn">
-                        <a onclick="location.href='crear_favores.html'" class="btn">Crear</a>
+                        <button tabindex="6" role="button" onclick="location.href='crear_favores.html'" class="btn ">Crear</button>
                     </div>
                 </div>
             </div>
