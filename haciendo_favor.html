@@ -30,15 +30,15 @@
         </div>
         <div class="nav-wrapper">
             <div class="col s12">
-              <a href="./elegir_rol.html" class="breadcrumb"><i class="fas fa-home"></i></a>
-              <a href="./crear_favores.html" class="breadcrumb">Crear favor</a>
-              <a href="#" class="breadcrumb">Estado del favor</a>
+              <a href="./elegir_rol.html" class="breadcrumb" aria-label="regresar a pagina de elegir rol"><i class="fas fa-home"></i></a>
+              <a href="./crear_favores.html" class="breadcrumb" aria-label="regresar a pagina de crear un favor">Crear favor</a>
+              <a href="#" class="breadcrumb" aria-label="estas en la pagina del estado de tu favor creado">Estado del favor</a>
             </div>
           </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a class="modal-trigger" href="#inicio">Iniciar sesión</a></li>
-        <li><a class="modal-trigger" href="#registro">Registrarse</a></li>
+    <ul class="sidenav" id="mobile-demo" tabindex="1" aria-hidden="true">
+        <li><a class="modal-trigger" tabindex="-1" href="#inicio">Iniciar sesión</a></li>
+        <li><a class="modal-trigger" tabindex="-1" href="#registro">Registrarse</a></li>
         <li><a href="#">Información</a></li>
     </ul>
     <!--    fin navegacion-->
@@ -51,109 +51,107 @@
             
             <div class="detalle-container container">
                 <div class="detalle-titulo">
-                    <h4>Detalle del favor</h4>
+                    <h4 tabindex="1">Detalle del favor</h4>
                 </div>
                 <div class="detalle-contenido">
                     <div class="detalle">
                         <div class="row">
                             <div class="col s12 m6 l6">
-                                <p class="element">Marcelo</p>
+                                <p class="element" tabindex="2">Marcelo</p>
                             </div>
                             <div class="col s12 m6 l6">
-                                <p class="element">Transporte</p>
+                                <p class="element" tabindex="3">Transporte</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col s12 m6 l6">
-                                <p class="element">1 horas</p>
+                                <p class="element" tabindex="4">1 horas</p>
                             </div>
                             <div class="col s12 m6 l6">
-                                <p class="element">200 HC</p>
+                                <p class="element" tabindex="5">200 HC</p>
                             </div>
                         </div>
-                        <p>Necesito  buscar a alguien que busque a mis hijos al colegio.</p>
+                        <p tabindex="6">Necesito que recojan a mis hijos en el colegio.</p>
                     </div>
                 </div>
             </div>
 
             <div class="lista-titulo">
-                <h4>Usuarios pendientes de aceptar:</h4>
+                <h4 tabindex="7">Usuarios pendientes de aceptar para este favor:</h4>
             </div>
-            <div class="lista-usuario">
+            <div class="lista-usuario" aria-live="polite">
                 <div class="usuario">
                     <div class="row valign-wrapper">
                         <div class="col">
-                            <p>Leo</p>
+                            <p tabindex="8">Leo</p>
                         </div>
                         <div class="col s6">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            <i tabindex="9" aria-label="4 estrellas de reputacion" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="fas fa-star"></i><i class="far fa-star"></i>
                         </div>
                         <div class="col s8">
-                            <p>
+                            <p tabindex="9">
                                 Soy puntual y conduzco con cuidado y me especializo en tareas del tipo
                                 transporte
                             </p>
                         </div>
                     </div>
                     <div class="aceptar-usuario">
-                        <a onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Aceptar</a>
+                        <button tabindex="10" onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Aceptar</button>
                     </div>
                 </div>
                 <div class="usuario">
                     <div class="row valign-wrapper">
                         <div class="col">
-                            <p>Messi</p>
+                            <p tabindex="11">Messi</p>
                         </div>
                         <div class="col s6">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            <i tabindex="12" aria-label="3 estrellas de reputacion" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="far fa-star"></i><i class="far fa-star"></i>
                         </div>
                         <div class="col s8">
-                            <p>
-                                Soy puntual y conduzco con cuidado y me especializo en tareas del tipo
-                                transporte
+                            <p tabindex="13">
+                                Manejo un taxi en mis tiempos libres, tengo 23 años trabajando de transportista.
                             </p>
                         </div>
                     </div>
                     <div class="aceptar-usuario">
-                        <a onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Aceptar</a>
+                        <button tabindex="14" onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Aceptar</button>
                     </div>
                 </div>
                 <div class="usuario">
                     <div class="row valign-wrapper">
                         <div class="col">
-                            <p>Daniel</p>
+                            <p tabindex="15">Daniel</p>
                         </div>
                         <div class="col s6">
-                            <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                            <i tabindex="16" aria-label="1 estrella de reputacion" class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
                                 class="far fa-star"></i><i class="far fa-star"></i>
                         </div>
                         <div class="col s8">
-                            <p>
-                                Soy puntual y conduzco con cuidado y me especializo en tareas del tipo
-                                transporte
+                            <p tabindex="17">
+                                Soy nuevo en la aplicación, tengo licencia tipo B y se manejar muy bien.
                             </p>
                         </div>
                     </div>
                     <div class="aceptar-usuario">
-                        <a onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Aceptar</a>
+                        <button tabindex="18" onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Aceptar</button>
                     </div>
                 </div>
             </div>
 
             <div class="detalle-container container">
                 <div class="detalle-titulo">
-                    <h4>Estado del favor</h4>
+                    <h4 tabindex="19">Estado del favor</h4>
                 </div>
                 <div class="detalle-contenido">
                     <div class="estado">
-                       <p>En curso.</p>
-                       <p>Tiempo transcurrido : 0:00:00</p>
+                       <p tabindex="20">En curso.</p>
+                       <p tabindex="21">Tiempo transcurrido : 0:00:00</p>
                     </div>
                 </div>
                 <div class="detalle-btn">
-                    <a onclick="location.href=''" class="disabled btn">calificar usuario</a>
+                    <a tabindex="22" onclick="location.href=''" class="disabled btn">calificar usuario</a>
                 </div> 
             </div>
 
