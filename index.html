@@ -47,22 +47,22 @@
 
     <header>
         <!--    navegacion-->
-        <nav>
+        <nav role="navigation" aria-label="Menu de navegacion">
             <div class="nav-wrapper">
                 <a href="index.html" class="left brand-logo">Banco de tiempo</a>
                 <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a class="modal-trigger" href="./elegir_rol.html">Iniciar sesión</a></li>
                     <li><a class="modal-trigger" href="#registro">Registrarse</a></li>
-                    <li><a href="#">Información</a></li>
+                    <li><a href="#info">Información</a></li>
                 </ul>
             </div>
         </nav>
 
-        <ul class="sidenav" id="mobile-demo">
-            <li><a class="modal-trigger waves-effect waves-light btn" href="./elegir_rol.html">Iniciar sesión</a></li>
-            <li><a class="modal-trigger btn" href="#registro">Registrarse</a></li>
-            <li><a class="waves-effect waves-light btn" href="#">Información</a></li>
+        <ul class="sidenav" id="mobile-demo" tabindex="-1">
+            <li><a tabindex="-1" class="modal-trigger waves-effect waves-light btn" tabindex="-1" href="./elegir_rol.html">Iniciar sesión</a></li>
+            <li><a tabindex="-1" class="modal-trigger btn" tabindex="-1" href="#registro">Registrarse</a></li>
+            <li><a tabindex="-1" class="waves-effect waves-light btn" tabindex="-1" href="#">Información</a></li>
         </ul>
         <!--    fin navegacion-->
     </header>
@@ -99,7 +99,7 @@
 
 
     <!-- Modal registro -->
-    <div id="registro" class="modal">
+    <div id="registro" class="modal" aria-modal="true">
         <div class="modal-content">
             <h3>Registro</h3>
             <p>
@@ -107,32 +107,32 @@
                 Los campos que contengan el símbolo &quot*&quot son obligatorios.
             </p>
 
-            <form action="#registrar" method="post">
+            <form action="#registrar" method="post" role="form">
 
                 <p>(*)Nombre:</p>
-                <input id="nombre" type="text" name="nombre" alt="El nombre del usuario.">
+                <input id="nombre" type="text" name="nombre" alt="El nombre del usuario." aria-required="true" aria-label="Introduzca su Nombre">
 
                 <p>(*)Apellido:</p>
-                <input id="apellido" type="text" name="apellido" alt="El apellido del usuario.">
+                <input id="apellido" type="text" name="apellido" alt="El apellido del usuario." aria-required="true" aria-label="Introduzca su Apellido">
 
                 <p>(*)Genero:</p>
-
+                <div role="radiogroup" >
                 <p>
                     <label>
-                        <input id="generoh" name="group1" class="with-gap" type="radio" checked />
-                        <span>Hombre</span>
+                        <input id="genero" name="group1" class="with-gap" type="radio" checked role="radio" aria-describedby="dhombre"/>
+                        <span id="dhombre">Hombre</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="generom" name="group1" class="with-gap" type="radio" />
-                        <span>Mujer</span>
+                        <input id="genero" name="group1" class="with-gap" type="radio" role="radio" aria-describedby="dmujer"/>
+                        <span id="dmujer">Mujer</span>
                     </label>
                 </p>
-
-                <div class="input-field col s12">
-                    <select id="ciudad">
-                        <option value="" disabled selected>(*) Ciudad</option>
+                </div>
+                <div class="input-field col s12"  aria-label="Lista de ciudades" >
+                    <select id="ciudad" role="list">
+                        <option value="" disabled selected>(*)Seleccione Ciudad en la lista</option>
                         <option value="Santa Cruz">Santa Cruz</option>
                         <option value="La Laguna">La Laguna</option>
                         <option value="La Orotava">La Orotava</option>
@@ -145,66 +145,66 @@
                 </div>
 
                 <p>(*)Correo electrónico:</p>
-                <input id="correo" type="text" name="correo" alt="El correo del usuario.">
+                <input id="correo" type="text" name="correo" alt="El correo del usuario." aria-label="Introduzca su correo electronico" aria-required="true">
 
                 <p>(*)Contraseña:</p>
-                <input id="password" type="password" name="clave" alt="La contraseña para iniciar sesion.">
+                <input id="password" type="password" name="clave" alt="La contraseña para iniciar sesion." aria-label="Introduzca una contraseña de minimo 6 caracteres" aria-required="true">
 
                 <p>(*)Repite la contraseña:</p>
-                <input id="repassword" type="password" name="re-clave" alt="Comprovacion de la contraseña.">
+                <input id="repassword" type="password" name="re-clave" alt="Comprovacion de la contraseña." aria-label="Repita la contraseña" aria-required="true">
 
-                <p>En que cirscunstáncias sueles necesitar ayuda:</p>
+                <p>Necesitas ayuda para:</p>
                 <table>
                     <tr>
-                        <td><label><input type="checkbox" name="interes" value="Tutorias Universitarias" />
+                        <td><label><input type="checkbox" name="interes" value="Tutorias Universitarias" role="checkbox" />
                                 <span>Tutorías universitarias</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Transporte"> <span>Transporte</span>
+                        <td><label><input type="checkbox" name="interes" value="Transporte" role="checkbox"> <span>Transporte</span>
                             </label></td>
-                        <td><label><input type="checkbox" name="interes" value="Tareas del hogar"> <span>Tareas del
+                        <td><label><input type="checkbox" name="interes" value="Tareas del hogar" role="checkbox"> <span>Tareas del
                                     hogar</span></label></td>
                     </tr>
                     <tr>
-                        <td><label><input type="checkbox" name="interes" value="Actividades de trabajo">
+                        <td><label><input type="checkbox" name="interes" value="Actividades de trabajo" role="checkbox">
                                 <span>Actividades de trabajo</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Cuidado de niños"> <span>Cuidado de
+                        <td><label><input type="checkbox" name="interes" value="Cuidado de niños" role="checkbox"> <span>Cuidado de
                                     niños</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Cuidado de personas mayores">
+                        <td><label><input type="checkbox" name="interes" value="Cuidado de personas mayores" role="checkbox">
                                 <span>Cuidado de personas mayores</span></label></td>
                     </tr>
                     <tr>
-                        <td><label><input type="checkbox" name="interes" value="Compras"> <span>Compras</span></label>
+                        <td><label><input type="checkbox" name="interes" value="Compras" role="checkbox"> <span>Compras</span></label>
                         </td>
-                        <td><label><input type="checkbox" name="interes" value="Planificar eventos"> <span>Planificar
+                        <td><label><input type="checkbox" name="interes" value="Planificar eventos" role="checkbox"> <span>Planificar
                                     eventos</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Ejercicios físicos"> <span>Ejercicios
+                        <td><label><input type="checkbox" name="interes" value="Ejercicios físicos" role="checkbox"> <span>Ejercicios
                                     físicos</span></label></td>
                     </tr>
                     <tr>
-                        <td><label><input type="checkbox" name="interes" value="Tutorías escolares"> <span>Tutorías
+                        <td><label><input type="checkbox" name="interes" value="Tutorías escolares" role="checkbox"> <span>Tutorías
                                     escolares</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Cocina"> <span>Cocina</span></label>
+                        <td><label><input type="checkbox" name="interes" value="Cocina" role="checkbox"> <span>Cocina</span></label>
                         </td>
-                        <td><label><input type="checkbox" name="interes" value="Limpieza"> <span>Limpieza</span></label>
+                        <td><label><input type="checkbox" name="interes" value="Limpieza" role="checkbox"> <span>Limpieza</span></label>
                         </td>
                     </tr>
                 </table>
                 <label>Si necesitas agregar información adicional sobre tus necesidades puedes hacerlo aquí:</label>
-                <textarea id="interesad"></textarea>
+                <textarea id="interesad" aria-label="Si necesitas agregar información adicional sobre tus necesidades puedes escribirlo ahora"></textarea>
 
             </form>
         </div>
         <div class="modal-footer">
-            <a type="submit" onclick="registrar()" class="modal-close waves-effect waves-light btn">Registrar</a>
+            <button type="submit" onclick="registrar()" class="modal-close waves-effect waves-light btn" aria-label="Terminar registro">Registrar</button>
         </div>
     </div>
     <!-- Modal registro fin-->
 
 
-    <div class="tip0">
+    <div id="info" class="tip0">
         <div class="container">
             <div class="section">
-                <h2><em>La mejor opción para ahorrar tiempo en tus días ocupados.</em></h2>
-                <p>
+                <h2 tabindex="1"><em>La mejor opción para ahorrar tiempo en tus días ocupados.</em></h2>
+                <p tabindex="2">
                     Banco de tiempo esta pensado para las personas que necesitan una mano extra en su día a día para
                     llevar a cabo diversas tareas y ahorrar tiempo.
                 </p>
@@ -215,10 +215,10 @@
     <div class="tip1">
         <div class="container">
             <div class="section">
-                <h4>Compras con favores, pagas con favores</h4>
-                <p>
+                <h4 tabindex="3">Compras con favores, pagas con favores</h4>
+                <p tabindex="4">
                     La plataforma es completamente gratuita, sin embargo, para poder contratar un ayudante deberás tener
-                    la suficiente cantidad de Helper Coins que la tarea requeira, los Helper Coins se consiguen ayudando
+                    la suficiente cantidad de Helper Coins que la tarea requiera, los Helper Coins se consiguen ayudando
                     a otras personas y su cantidad dependerá del tiempo y la dificultad que inviertas en los favores de
                     los demás usuarios.
                 </p>
@@ -236,8 +236,8 @@
     <div class="tip2">
         <div class="container">
             <div class="section">
-                <h4>Si ayudas, resaltas !</h4>
-                <p>
+                <h4 tabindex="5">Si ayudas, resaltas !</h4>
+                <p tabindex="6">
                     Cada vez que completes una tarea, estas se iran acumulando en un marcador que afectara tu nivel como
                     usuario, además resivirás puntuaciones y referencias de las personas a quien ayudaste, de esta forma
                     la aplicación no tardara en recomendarte para cumplir mas actividades.
@@ -255,15 +255,15 @@
     <div class="tip3">
         <div class="container">
             <div class="section">
-                <h4>La ayuda te ayuda</h4>
-                <p>
+                <h4 tabindex="7">La ayuda te ayuda</h4>
+                <p tabindex="8">
                     Mientras subas de nivel como usuario o invites a mas personas a unirse al banco de tiempo, podrás
                     recibir recompenzas extras:
                 </p>
-                <ul>
-                    <li>Descuento al comprar favores.</li>
-                    <li>Helper coins.</li>
-                    <li>Cupones para tareas especificas gratis.</li>
+                <ul role="contenido" aria-label="Recompenzas">
+                    <li tabindex="9">Descuento al comprar favores.</li>
+                    <li tabindex="10">Helper coins.</li>
+                    <li tabindex="11">Cupones para tareas especificas gratis.</li>
                 </ul>
             </div>
         </div>
@@ -279,8 +279,8 @@
     <div class="tip-opiniones">
         <div class="container">
             <div class="section">
-                <h4>Opiniones de nuestros usuarios</h4>
-                <p>
+                <h4 tabindex="12">Opiniones de nuestros usuarios</h4>
+                <p tabindex="13">
                     Usuarios que han utilizado nuestra página web cuentan sus experiencias.
                 </p>
             </div>
@@ -291,68 +291,68 @@
         <div class="col s12">
             <ul class="collection">
                 <li class="collection-item avatar">
-                    <img src="imagenes/Martin.jpg" alt="" class="circle">
-                    <span class="title">Martin</span>
-                    <p>Expl&eacute;ndida aplicaci&oacute;n <br>
+                    <img src="imagenes/Martin.jpg" alt="" class="circle" >
+                    <span class="title" tabindex="14">Martin</span>
+                    <p tabindex="15">Expl&eacute;ndida aplicaci&oacute;n <br>
                         me ha encantado.
                     </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                    <a href="#!" class="secondary-content" tabindex="-1"><i class="material-icons">account_circle</i></a>
                 </li>
                 <li class="collection-item avatar">
                     <img src="imagenes/retrato-hombre-joven-peque%C3%B1o-rostro-sin-copyright.jpg" alt=""
                         class="circle">
-                    <span class="title">Isodoro</span>
-                    <p>No me ha parecido muy buena, <br>
+                    <span class="title" tabindex="16">Isodoro</span>
+                    <p tabindex="17">No me ha parecido muy buena, <br>
                         es demaciado restrictiva.
                     </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                    <a href="#!" class="secondary-content" tabindex="-1"><i class="material-icons">account_circle</i></a>
                 </li>
                 <li class="collection-item avatar">
-                    <img src="imagenes/Laura%20Martinez%20Molera2-2.webp" alt="" class="circle">
-                    <span class="title">Laura</span>
-                    <p>Exelente aplicación <br>
+                    <img src="imagenes/Laura%20Martinez%20Molera2-2.webp" alt="" class="circle" > 
+                    <span class="title" tabindex="18">Laura</span>
+                    <p tabindex="19">Exelente aplicación <br>
 
                     </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                    <a href="#!" class="secondary-content" tabindex="-1"><i class="material-icons">account_circle</i></a>
                 </li>
                 <li class="collection-item avatar">
-                    <img src="imagenes/%C3%ADndice.jpeg" alt="" class="circle">
-                    <span class="title">Fernando</span>
-                    <p>Una aplicaci&oacute;n muy &uacute;til.
+                    <img src="imagenes/%C3%ADndice.jpeg" alt="" class="circle" >
+                    <span class="title" tabindex="20">Fernando</span>
+                    <p tabindex="21">Una aplicaci&oacute;n muy &uacute;til.
                     </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                    <a href="#!" class="secondary-content" tabindex="-1"><i class="material-icons">account_circle</i></a>
                 </li>
                 <li class="collection-item avatar">
-                    <img src="imagenes/antonio.webp" alt="" class="circle">
-                    <span class="title">Antonio</span>
-                    <p>Me ha gustado bastante, <br>
+                    <img src="imagenes/antonio.webp" alt="" class="circle" >
+                    <span class="title" tabindex="22">Antonio</span>
+                    <p tabindex="23">Me ha gustado bastante, <br>
                         aunque le falta algo de trabajo todav&iacute;a.
                     </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                    <a href="#!" class="secondary-content" tabindex="-1"><i class="material-icons">account_circle</i></a>
                 </li>
                 <li class="collection-item avatar">
-                    <img src="imagenes/claudia.jpg" alt="" class="circle">
-                    <span class="title">Ana</span>
-                    <p>Saludos desde SEVILLA ANDALUCIA SUR ESPAÑA.<br>
+                    <img src="imagenes/claudia.jpg" alt="" class="circle" >
+                    <span class="title" tabindex="24">Ana</span>
+                    <p tabindex="25">Saludos desde SEVILLA ANDALUCIA SUR ESPAÑA.<br>
                         Mi experiencia personal es GENIAL. Muchas gracias.
                     </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                    <a href="#!" class="secondary-content" tabindex="-1"><i class="material-icons">account_circle</i></a>
                 </li>
                 <li class="collection-item avatar">
-                    <img src="imagenes/luis.jpg" alt="" class="circle">
-                    <span class="title">Luis</span>
-                    <p>
+                    <img src="imagenes/luis.jpg" alt="" class="circle" >
+                    <span class="title" tabindex="26">Luis</span>
+                    <p tabindex="27">
                         Una app sencilla y eficaz, indispensable en el telefono.
                     </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                    <a href="#!" class="secondary-content" tabindex="-1"><i class="material-icons">account_circle</i></a>
                 </li>
                 <li class="collection-item avatar">
-                    <img src="imagenes/richard.jpeg" alt="" class="circle">
-                    <span class="title">Borja</span>
-                    <p>
+                    <img src="imagenes/richard.jpeg" alt="" class="circle" >
+                    <span class="title" tabindex="28">Borja</span>
+                    <p tabindex="29">
                         Una basura, quien necesita contabilizar el tiempo.
                     </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">account_circle</i></a>
+                    <a href="#!" class="secondary-content" tabindex="-1"><i class="material-icons">account_circle</i></a>
                 </li>
             </ul>
         </div>
