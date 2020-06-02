@@ -30,15 +30,15 @@
         </div>
         <div class="nav-wrapper">
             <div class="col s12">
-              <a href="./elegir_rol.html" class="breadcrumb"><i class="fas fa-home"></i></a>
-              <a href="#!" class="breadcrumb">Lista de favores</a>
+              <a href="./elegir_rol.html" class="breadcrumb" aria-label="volver a pagina de escoger rol"><i class="fas fa-home"></i></a>
+              <a href="#!" class="breadcrumb" aria-label="Estas en pagina de lista de favores">Lista de favores</a>
             </div>
           </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a class="modal-trigger" href="#inicio">Iniciar sesión</a></li>
-        <li><a class="modal-trigger" href="#registro">Registrarse</a></li>
-        <li><a href="#">Información</a></li>
+    <ul class="sidenav" id="mobile-demo" aria-hidden="true" tabindex="-1">
+        <li><a class="modal-trigger" href="#inicio" tabindex="-1">Iniciar sesión</a></li>
+        <li><a class="modal-trigger" href="#registro" tabindex="-1">Registrarse</a></li>
+        <li><a href="#" tabindex="-1">Información</a></li>
     </ul>
     <!--    fin navegacion-->
 </header>
@@ -47,96 +47,96 @@
     <div class="contenedor container">
         <div class="lista container">
             <div class="lista-titulo">
-                <h4>Lista de favores activos</h4>
+                <h4 tabindex="1">Lista de favores activos</h4>
             </div>
             <div class="lista-favores">
                 <div class="favor z-depth-5 ">
                     <div class="row center-align">
                         <div class="col s12 m3 l3">
-                            <p>Marcelo</p>
+                            <p tabindex="2">Marcelo</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>Transporte</p>
+                            <p tabindex="3">Transporte</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>1 horas</p>
+                            <p tabindex="4">1 horas</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>200 HC</p>
+                            <p tabindex="5">200 HC</p>
                         </div>
                         <div class="col s12 m12 l12">
-                            <p>Necesito buscar a alguien que busque a mis hijos al colegio.</p>
+                            <p tabindex="6">Necesito buscar a alguien que busque a mis hijos al colegio.</p>
                         </div>
                     </div>
                     <div class="entrar-favor">
-                        <a onclick="location.href='hacer_favor.html'" class="waves-effect waves-light btn">Entrar</a>
+                        <button tabindex="7" onclick="location.href='hacer_favor.html'" class="waves-effect waves-light btn">Entrar</button>
                     </div>
                 </div>
                 <div class="favor z-depth-5">
                     <div class="row center-align">
                         <div class="col s12 m3 l3">
-                            <p>Daniel</p>
+                            <p tabindex="8">Daniel</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>Transporte</p>
+                            <p tabindex="9">Transporte</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>1 horas</p>
+                            <p tabindex="10">1 horas</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>200 HC</p>
+                            <p tabindex="11">200 HC</p>
                         </div>
                         <div class="col s12 m12 l12">
-                            <p>Necesito buscar a alguien que busque a mis hijos al colegio.</p>
+                            <p tabindex="12">Necesito buscar a alguien que busque a mis hijos al colegio.</p>
                         </div>
                     </div>
                     <div class="entrar-favor">
-                        <a onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Entrar</a>
+                        <button tabindex="13" onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Entrar</button>
                     </div>
                 </div>
                 <div class="favor z-depth-5">
                     <div class="row center-align">
                         <div class="col s12 m3 l3">
-                            <p>Leo</p>
+                            <p tabindex="14">Leo</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>Tutorias Universitarias</p>
+                            <p tabindex="15">Tutorias Universitarias</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>2 horas</p>
+                            <p tabindex="16">2 horas</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>1000 HC</p>
+                            <p tabindex="17">1000 HC</p>
                         </div>
                         <div class="col s12 m12 l12">
-                            <p>Necesito clases particulares de usabilidad y accesibilidad.</p>
+                            <p tabindex="18">Necesito clases particulares de usabilidad y accesibilidad.</p>
                         </div>
                     </div>
                     <div class="entrar-favor">
-                        <a onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Entrar</a>
+                        <button tabindex="19" onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Entrar</button>
                     </div>
                 </div>
                 <div class="favor z-depth-5">
                     <div class="row center-align">
                         <div class="col s12 m3 l3">
-                            <p>Messi</p>
+                            <p tabindex="20">Messi</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>Ejercicio fisico</p>
+                            <p tabindex="21">Ejercicio fisico</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>2 horas</p>
+                            <p tabindex="22">2 horas</p>
                         </div>
                         <div class="col s12 m3 l3">
-                            <p>400 HC</p>
+                            <p tabindex="23">400 HC</p>
                         </div>
                         <div class="col s12 m12 l12">
-                            <p>Busco un entrenador de futbol para practicar mis tiros al arco desde larga distancia y
+                            <p tabindex="24">Busco un entrenador de futbol para practicar mis tiros al arco desde larga distancia y
                             pases de balon tacticos.</p>
                         </div>
                     </div>
                     <div class="entrar-favor">
-                        <a onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Entrar</a>
+                        <button tabindex="25" onclick="location.href='lista_favores.html'" class="waves-effect waves-light btn">Entrar</button>
                     </div>
                 </div>
             </div>
