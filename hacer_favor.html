@@ -30,15 +30,15 @@
         </div>
         <div class="nav-wrapper">
             <div class="col s12">
-              <a href="./elegir_rol.html" class="breadcrumb"><i class="fas fa-home"></i></a>
-              <a href="./lista_favores.html" class="breadcrumb">Lista de favores</a>
-              <a href="#!" class="breadcrumb">Hacer favor</a>
+              <a href="./elegir_rol.html" class="breadcrumb" aria-label="volver a pagina de escoger rol"><i class="fas fa-home"></i></a>
+              <a href="./lista_favores.html" class="breadcrumb" aria-label="volver a pagina de lista de favores">Lista de favores</a>
+              <a href="#!" class="breadcrumb" aria-label="estas en la pagina de hacer un favor">Hacer favor</a>
             </div>
         </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a class="modal-trigger" href="#inicio">Iniciar sesión</a></li>
-        <li><a class="modal-trigger" href="#registro">Registrarse</a></li>
+    <ul class="sidenav" id="mobile-demo" aria-hidden="true" tabindex="-1">
+        <li><a class="modal-trigger" href="#inicio" tabindex="-1">Iniciar sesión</a></li>
+        <li><a class="modal-trigger" href="#registro" tabindex="-1">Registrarse</a></li>
         <li><a href="#">Información</a></li>
     </ul>
     <!--    fin navegacion-->
@@ -49,40 +49,40 @@
 
     <div class="detalle-container container">
         <div class="detalle-titulo">
-            <h4>Detalle del favor</h4>
+            <h4 tabindex="1">Detalle del favor</h4>
         </div>
         <div class="detalle-contenido">
             <div class="detalle z-depth-5">
                 <div class="row">
                     <div class="col s12 m6 l6">
-                        <p>Marcelo</p>
+                        <p tabindex="2">Marcelo</p>
                     </div>
                     <div class="col s12 m6 l6">
-                        <p>Transporte</p>
+                        <p tabindex="3">Transporte</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 m6 l6">
-                        <p>1 horas</p>
+                        <p tabindex="4">1 horas</p>
                     </div>
                     <div class="col s12 m6 l6">
-                        <p>200 HC</p>
+                        <p tabindex="5">200 HC</p>
                     </div>
                 </div>
-                <p>Necesito buscar a alguien que busque a mis hijos al colegio.</p>
+                <p tabindex="6">Necesito buscar a alguien que busque a mis hijos al colegio.</p>
             </div>
         </div>
         <div class="detalle-titulo">
-            <h4>Estado del favor</h4>
+            <h4 tabindex="7">Estado del favor</h4>
         </div>
         <div class="detalle-contenido">
             <div class="detalle-estado z-depth-5">
-                <p>Estado: Pendiente de aceptacion</p>
-                <p>Tiempo: 0:00:00</p>
+                <p tabindex="8">Estado: Pendiente de aceptacion</p>
+                <p tabindex="9">Tiempo: 0:00:00</p>
             </div>
         </div>
         <div class="detalle-btn">
-            <a onclick="location.href=''" class="disabled btn">Terminar</a>
+            <a tabindex="10" onclick="location.href=''" class="disabled btn">Terminar</a>
         </div> 
     </div>
 
