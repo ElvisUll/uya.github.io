@@ -7,7 +7,7 @@
     <meta name="author" content="Elvis, Leo, Daniel">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <meta name="description" content="La mejor opcion para ahorrar tiempo">
-    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="icon" type="icon" href="imagenes/bt-ico.ico" />
     <link href="css/materialize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
@@ -47,7 +47,7 @@
 
     <header>
         <!--    navegacion-->
-        <nav role="navigation" aria-label="Menu de navegacion">
+        <nav aria-label="Menu de navegacion">
             <div class="nav-wrapper">
                 <a href="index.html" class="left brand-logo">Banco de tiempo</a>
                 <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -95,11 +95,11 @@
 
                                     </div>
         </div>
-                                <!-- Modal inicio fin-->
+                                <!-Modal inicio fin-->
 
 
     <!-- Modal registro -->
-    <div id="registro" class="modal" aria-modal="true">
+    <div id="registro" class="modal" role="form" aria-modal="true">
         <div class="modal-content">
             <h3>Registro</h3>
             <p>
@@ -107,31 +107,31 @@
                 Los campos que contengan el símbolo &quot*&quot son obligatorios.
             </p>
 
-            <form action="#registrar" method="post" role="form">
+            <form action="#registrar" method="post">
 
                 <p>(*)Nombre:</p>
-                <input id="nombre" type="text" name="nombre" alt="El nombre del usuario." aria-required="true" aria-label="Introduzca su Nombre">
+                <input id="nombre" type="text" name="nombre" aria-required="true" aria-label="Introduzca su Nombre">
 
                 <p>(*)Apellido:</p>
-                <input id="apellido" type="text" name="apellido" alt="El apellido del usuario." aria-required="true" aria-label="Introduzca su Apellido">
+                <input id="apellido" type="text" name="apellido" aria-required="true" aria-label="Introduzca su Apellido">
 
                 <p>(*)Genero:</p>
                 <div role="radiogroup" >
                 <p>
                     <label>
-                        <input id="genero" name="group1" class="with-gap" type="radio" checked role="radio" aria-describedby="dhombre"/>
+                        <input id="genero" name="group1" class="with-gap" type="radio" checked aria-describedby="dhombre"/>
                         <span id="dhombre">Hombre</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="genero" name="group1" class="with-gap" type="radio" role="radio" aria-describedby="dmujer"/>
+                        <input id="genero" name="group1" class="with-gap" type="radio" aria-describedby="dmujer"/>
                         <span id="dmujer">Mujer</span>
                     </label>
                 </p>
                 </div>
                 <div class="input-field col s12"  aria-label="Lista de ciudades" >
-                    <select id="ciudad" role="list">
+                    <select id="ciudad">
                         <option value="" disabled selected>(*)Seleccione Ciudad en la lista</option>
                         <option value="Santa Cruz">Santa Cruz</option>
                         <option value="La Laguna">La Laguna</option>
@@ -145,46 +145,46 @@
                 </div>
 
                 <p>(*)Correo electrónico:</p>
-                <input id="correo" type="text" name="correo" alt="El correo del usuario." aria-label="Introduzca su correo electronico" aria-required="true">
+                <input id="correo" type="text" name="correo" aria-label="Introduzca su correo electronico" aria-required="true">
 
                 <p>(*)Contraseña:</p>
-                <input id="password" type="password" name="clave" alt="La contraseña para iniciar sesion." aria-label="Introduzca una contraseña de minimo 6 caracteres" aria-required="true">
+                <input id="password" type="password" name="clave" aria-label="Introduzca una contraseña de minimo 6 caracteres" aria-required="true">
 
                 <p>(*)Repite la contraseña:</p>
-                <input id="repassword" type="password" name="re-clave" alt="Comprovacion de la contraseña." aria-label="Repita la contraseña" aria-required="true">
+                <input id="repassword" type="password" name="re-clave" aria-label="Repita la contraseña" aria-required="true">
 
                 <p>Necesitas ayuda para:</p>
                 <table>
                     <tr>
-                        <td><label><input type="checkbox" name="interes" value="Tutorias Universitarias" role="checkbox" />
+                        <td><label><input type="checkbox" name="interes" value="Tutorias Universitarias"  aria-checked="mixed" />
                                 <span>Tutorías universitarias</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Transporte" role="checkbox"> <span>Transporte</span>
+                        <td><label><input type="checkbox" name="interes" value="Transporte"  aria-checked="mixed"> <span>Transporte</span>
                             </label></td>
-                        <td><label><input type="checkbox" name="interes" value="Tareas del hogar" role="checkbox"> <span>Tareas del
+                        <td><label><input type="checkbox" name="interes" value="Tareas del hogar"  aria-checked="mixed"> <span>Tareas del
                                     hogar</span></label></td>
                     </tr>
                     <tr>
-                        <td><label><input type="checkbox" name="interes" value="Actividades de trabajo" role="checkbox">
+                        <td><label><input type="checkbox" name="interes" value="Actividades de trabajo"  aria-checked="mixed">
                                 <span>Actividades de trabajo</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Cuidado de niños" role="checkbox"> <span>Cuidado de
+                        <td><label><input type="checkbox" name="interes" value="Cuidado de niños"  aria-checked="mixed"> <span>Cuidado de
                                     niños</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Cuidado de personas mayores" role="checkbox">
+                        <td><label><input type="checkbox" name="interes" value="Cuidado de personas mayores"  aria-checked="mixed">
                                 <span>Cuidado de personas mayores</span></label></td>
                     </tr>
                     <tr>
-                        <td><label><input type="checkbox" name="interes" value="Compras" role="checkbox"> <span>Compras</span></label>
+                        <td><label><input type="checkbox" name="interes" value="Compras"  aria-checked="mixed"> <span>Compras</span></label>
                         </td>
-                        <td><label><input type="checkbox" name="interes" value="Planificar eventos" role="checkbox"> <span>Planificar
+                        <td><label><input type="checkbox" name="interes" value="Planificar eventos"  aria-checked="mixed"> <span>Planificar
                                     eventos</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Ejercicios físicos" role="checkbox"> <span>Ejercicios
+                        <td><label><input type="checkbox" name="interes" value="Ejercicios físicos"  aria-checked="mixed"> <span>Ejercicios
                                     físicos</span></label></td>
                     </tr>
                     <tr>
-                        <td><label><input type="checkbox" name="interes" value="Tutorías escolares" role="checkbox"> <span>Tutorías
+                        <td><label><input type="checkbox" name="interes" value="Tutorías escolares"  aria-checked="mixed"> <span>Tutorías
                                     escolares</span></label></td>
-                        <td><label><input type="checkbox" name="interes" value="Cocina" role="checkbox"> <span>Cocina</span></label>
+                        <td><label><input type="checkbox" name="interes" value="Cocina"  aria-checked="mixed"> <span>Cocina</span></label>
                         </td>
-                        <td><label><input type="checkbox" name="interes" value="Limpieza" role="checkbox"> <span>Limpieza</span></label>
+                        <td><label><input type="checkbox" name="interes" value="Limpieza"  aria-checked="mixed"> <span>Limpieza</span></label>
                         </td>
                     </tr>
                 </table>
@@ -260,7 +260,7 @@
                     Mientras subas de nivel como usuario o invites a mas personas a unirse al banco de tiempo, podrás
                     recibir recompenzas extras:
                 </p>
-                <ul role="contenido" aria-label="Recompenzas">
+                <ul  aria-label="Recompenzas">
                     <li tabindex="9">Descuento al comprar favores.</li>
                     <li tabindex="10">Helper coins.</li>
                     <li tabindex="11">Cupones para tareas especificas gratis.</li>
