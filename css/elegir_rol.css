@@ -12,14 +12,14 @@
 
 .titulo {
     text-align: center;
-    color: white;
+    color: #22313F;
 }
 
 .card {
     background: #298f8b;
     border-radius: 10px;
     text-align: center;
-    color: white;
+    color: #22313F;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 12px;
@@ -42,6 +42,7 @@
 .btn {
     padding-left: 35%;
     padding-right: 35%;
+    color: #22313F;
 }
 
 .col {

@@ -15,7 +15,7 @@
 
 .lista-titulo {
     text-align: center;
-    color: white;
+    color: #22313F;;
 }
 
 .lista-usuario {
@@ -54,7 +54,7 @@
 
 .detalle-container {
     background: #36b5b0;
-    color: white;
+    color: #22313F;
     margin-top: 10px;
     border-radius: 10px;
     width: auto;

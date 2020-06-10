@@ -16,7 +16,7 @@
 
 .lista-titulo {
     text-align: center;
-    color: white;
+    color: #22313F;
 }
 
 .lista-favores {
@@ -48,4 +48,8 @@
 .entrar-favor button {
     padding-left: 35%;
     padding-right: 35%;
+}
+
+button {
+    color: #22313F !important;
 }

@@ -17,7 +17,7 @@
 
 .lista-titulo {
     text-align: center;
-    color: white;
+    color: #22313F;
 }
 
 .lista-favores {
@@ -35,7 +35,7 @@
 }
 
 .info-adicional {
-    color: white;
+    color: #22313F;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
@@ -43,6 +43,10 @@
 
 input {
     text-align: center;
+}
+
+button {
+    color: #22313F !important;
 }
 
 

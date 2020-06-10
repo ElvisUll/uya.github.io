@@ -12,6 +12,11 @@ nav {
     text-align: justify;
     padding-left: 10px;
     padding-right: 10px;
+    color: #22313F;
+}
+
+nav a {
+    color: #22313F !important;
 }
 
 .sidenav {
@@ -20,18 +25,18 @@ nav {
 }
 
 .sidenav li a{
-    color: #ffffff;
+    color: #22313F;
 }
 
 
 .page-footer   {
     background: #80bdab;
-    color: white;
+    color: #22313F;
     margin-top: 100px;
 }
 
 .footer-copyright .container{
-    color: white;
+    color: #22313F;
 }
 
 .opiniones {
